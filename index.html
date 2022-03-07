@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Nature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Save Nature</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="bg.jpg" class="bg">
+        <img src="bird.png" class="bird">
+        <div class="content">
+            <h2>We can save The <br><span>Earth</span></h2>
+            <p>Love for any wild animal is pure,
+                Because In that love u dont expect anything in return. Not a simply love in return. No matter how few possessions you own or how little money you have, loving wildlife and nature will make you rich beyond measure</p>
+            <a href="#">Join Us</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+        <div class="textBlocks">
+            <div class="block">
+                <h3>Defenders of Earth</h3>
+                <p>Humankind must learn to understand that the life of an animal is in no way less precious than our own. </p>
+            </div>
+            <div class="block">
+                <h3>How to save our Wildlife</h3>
+                <p>The hope of the future lies not in curbing the influence of human occupancy – it is already too late for that </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg');
+            const bird = document.querySelector('.bird');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+
+            bird.style.right = 100 + e.pageX/2 + 'px';
+
+            content.style.left = 100 + e.pageX/2.5 + 'px';
+        })
+        
+    </script>
+</body>
+</html>
