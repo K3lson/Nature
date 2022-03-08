@@ -138,3 +138,49 @@ section header .toggle {
 .textBlocks .block p {
     color: #fff;
 }
+@media (max-width:767px) {
+    body {
+        background: #000;
+        height: 100vh;
+    }
+    section header .logo {
+        font-size: 1em;
+    }
+    section header .toggle {
+        width: 22px;
+        height: 22px;
+    }
+    .bird {
+        max-height: 60%;
+    }
+    .content h2 {
+        font-size: 2em;
+        line-height: 2em;
+    }
+    .content h2 span {
+        font-size: 2.5em;
+        letter-spacing: 3px;
+    }
+    .sci {
+        width: 40px;
+        padding: 20px;
+    }
+    .textBlocks .block {
+        position: relative;
+        padding: 20px;
+        margin-right: 40px;
+        max-width: 500px;
+        background: rgba(0, 255, 0, 0.2);
+    }
+    .textBlocks .block h3 {
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+        font-size:1em;
+    
+    }
+    .textBlocks .block p {
+        color: #fff;
+        font-size:.5em;
+    }    
+}
